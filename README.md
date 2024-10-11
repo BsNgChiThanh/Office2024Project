@@ -10,19 +10,28 @@
 - https://github.com/BsNgChiThanh/MAS-TOOL
 
 ## CÁCH 2
-
-```php
-set v=16
-if exist "%ProgramFiles%\Microsoft Office\Office%v%\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office%v%"
-if exist "%ProgramFiles(x86)%\Microsoft Office\Office%v%\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office%v%"
-cscript //nologo ospp.vbs /inslic:"..\root\Licenses16\pkeyconfig-office.xrm-ms" >nul
-(for /f %%x in ('dir /b ..\root\Licenses16\client-issuance*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
-(for /f %%x in ('dir /b ..\root\Licenses16\projectprovl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
-(for /f %%x in ('dir /b ..\root\Licenses16\projectpro2024vl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
-cscript ospp.vbs /setprt:1688
-cscript ospp.vbs /inpkey:D9GTG-NP7DV-T6JP3-B6B62-JB89R
-cscript ospp.vbs /sethst:107.175.77.7
-cscript ospp.vbs /sethst:172.16.0.2
-cscript ospp.vbs /act
-```
-đang cập nhật...
+- ĐẦU TIÊN KÍCH HOẠT BẰNG KEY KMS 180 NGÀY:
+  - Chạy **cmd** bằng quyền **Run as Administrator** rồi dán đoạn lệnh này vào, nhấn enter:
+  ```php
+  set v=16
+  if exist "%ProgramFiles%\Microsoft Office\Office%v%\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office%v%"
+  if exist "%ProgramFiles(x86)%\Microsoft Office\Office%v%\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office%v%"
+  cscript //nologo ospp.vbs /inslic:"..\root\Licenses16\pkeyconfig-office.xrm-ms" >nul
+  (for /f %%x in ('dir /b ..\root\Licenses16\client-issuance*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
+  (for /f %%x in ('dir /b ..\root\Licenses16\projectprovl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
+  (for /f %%x in ('dir /b ..\root\Licenses16\projectpro2024vl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
+  cscript ospp.vbs /setprt:1688
+  cscript ospp.vbs /inpkey:D9GTG-NP7DV-T6JP3-B6B62-JB89R
+  cscript ospp.vbs /sethst:107.175.77.7
+  cscript ospp.vbs /sethst:172.16.0.2
+  cscript ospp.vbs /act
+  ```
+  - ![image](https://github.com/user-attachments/assets/0d2a21a0-38da-44e6-b053-637254f5d70f)
+- SAU ĐÓ TẠO TÁC VỤ GIA HẠN OFFICE HÀNG TUẦN:
+  - Chạy Windows PowerShell bằng quyền Run as Administrator rồi dán đoạn lệnh này vào, nhấn enter:
+    
+  ```PHP
+  irm https://raw.githubusercontent.com/BsNgChiThanh/Kich-hoat-Office/KichHoatOffice/GiaHanKichHoat.ps1 | iex
+  ```
+  - ![image](https://github.com/user-attachments/assets/c61d847b-f874-4549-92af-f49985044f7e)
+- DONE!
