@@ -9,6 +9,7 @@
 - Dùng MAS Tools
 - https://github.com/BsNgChiThanh/MAS-TOOL
 
+Có nhiều cách kích hoạt, xong tôi chỉ ra 2 cách kích hoạt điển hình nhất:
 ## CÁCH 2
 - ĐẦU TIÊN KÍCH HOẠT BẰNG KEY KMS 180 NGÀY:
   - Chạy **cmd** bằng quyền **Run as Administrator** rồi dán đoạn lệnh này vào, nhấn enter:
