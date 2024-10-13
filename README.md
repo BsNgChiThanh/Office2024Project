@@ -23,6 +23,7 @@ Có nhiều cách kích hoạt, xong tôi chỉ ra 2 cách kích hoạt điển 
   (for /f %%x in ('dir /b ..\root\Licenses16\projectpro2024vl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
   cscript ospp.vbs /setprt:1688
   cscript ospp.vbs /inpkey:D9GTG-NP7DV-T6JP3-B6B62-JB89R
+  cscript ospp.vbs /inpkey:GNJ6P-Y4RBM-C32WW-2VJKJ-MTHKK
   cscript ospp.vbs /sethst:107.175.77.7
   cscript ospp.vbs /sethst:172.16.0.2
   cscript ospp.vbs /act
