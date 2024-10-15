@@ -6,9 +6,15 @@
   - Office 2024 Project Std [tại đây](https://raw.githubusercontent.com/BsNgChiThanh/Office2024Project/IMP/OfficeProjectStd2024.exe) hoặc [tại đây](https://c2rsetup.officeapps.live.com/c2r/download.aspx?ProductreleaseID=ProjectStd2024Retail&platform=x64&language=de-de&version=O16GA)
 
 Có nhiều cách kích hoạt, xong tôi chỉ ra 2 cách kích hoạt điển hình nhất:
-## CÁCH 1:
-- Dùng MAS Tools
-- https://github.com/BsNgChiThanh/MAS-TOOL
+
+# CÁCH 1:
+- [Dùng MAS Tools](https://github.com/BsNgChiThanh/MAS-TOOL)
+- Các bạn chạy **PowerShell** bằng quyền **Run as Administrator**, rồi dán câu lệnh sau đâu vào:
+  ```php
+  irm https://raw.githubusercontent.com/BsNgChiThanh/MAS-TOOL/IMP/MAS.ps1 | iex
+  ```
+- Làm theo chỉ dẫn của cửa sổ hiện lên.
+- Done!
 
 ## CÁCH 2
 - ĐẦU TIÊN KÍCH HOẠT BẰNG KEY KMS 180 NGÀY:
