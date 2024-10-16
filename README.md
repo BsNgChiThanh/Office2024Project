@@ -23,7 +23,9 @@ Có nhiều cách kích hoạt, xong tôi chỉ ra 2 cách kích hoạt điển 
   set v=16
   if exist "%ProgramFiles%\Microsoft Office\Office%v%\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office%v%"
   if exist "%ProgramFiles(x86)%\Microsoft Office\Office%v%\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office%v%"
-  
+
+  cscript //nologo ospp.vbs /inslic:"..\root\Licenses16\client-issuance*.xrm-ms
+  cscript //nologo ospp.vbs /inslic:"..\root\Licenses16\projectprovl_kms*.xrm-ms
   cscript //nologo ospp.vbs /inslic:"..\root\Licenses16\pkeyconfig-office.xrm-ms" >nul
   cscript ospp.vbs /inslic:"..\root\Licenses16\ProjectPro2024VL_KMS_Client_AE-ppd"
   cscript ospp.vbs /inslic:"..\root\Licenses16\ProjectPro2024VL_KMS_Client_AE-ul"
