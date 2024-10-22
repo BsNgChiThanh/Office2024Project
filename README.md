@@ -18,7 +18,7 @@ Có nhiều cách kích hoạt, xong tôi chỉ ra 2 cách kích hoạt điển 
 
 ## CÁCH 2
 - ĐẦU TIÊN KÍCH HOẠT BẰNG KEY KMS 180 NGÀY:
-  - Chạy **cmd** bằng quyền **Run as Administrator** rồi dán đoạn lệnh này vào, nhấn enter:
+  - Dùng [file cmd](https://raw.githubusercontent.com/BsNgChiThanh/Office2024Project/IMP/ActiveOffice2024Project.cmd) hoặc chạy **cmd** bằng quyền **Run as Administrator** rồi dán đoạn lệnh này vào, nhấn enter:
   ```php
   set v=16
   if exist "%ProgramFiles%\Microsoft Office\Office%v%\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office%v%"
